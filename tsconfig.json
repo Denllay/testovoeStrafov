@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "strict": true,
+    "alwaysStrict": true,
+    "target": "ES6",
+    "lib": [
+      "es6",
+      "dom",
+      "DOM.Iterable",
+      "esnext"
+    ],
+    "module": "ESNext",
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "removeComments": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "incremental": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

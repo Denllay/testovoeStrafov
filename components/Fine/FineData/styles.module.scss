@@ -1,0 +1,28 @@
+.main {
+  margin-top: 22px;
+  border: 1px solid #bfbfbf;
+  padding: 22px 15px;
+}
+
+.fines {
+  &_item {
+    display: flex;
+    margin: 2px 0;
+
+    &_key {
+      width: 35%;
+      font-size: 14px;
+    }
+
+    &_value {
+      font-size: 14px;
+      max-width: 65%;
+    }
+  }
+
+  &_title {
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+}
