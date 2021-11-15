@@ -20,7 +20,7 @@ const arrSum = (arr: number[]) => {
 const firtTypeSizeOfNumber = 24;
 const secondaryTypeSizeOfNumber = 19;
 
-export const getLastCategory = (value: string, shift = 0): string => {
+export const getLastCategory = (value: string, count = 1, shift = 0): string => {
   const isNotValidValue = value.length !== firtTypeSizeOfNumber && value.length !== secondaryTypeSizeOfNumber;
 
   if (isNotValidValue) return "";
@@ -30,7 +30,10 @@ export const getLastCategory = (value: string, shift = 0): string => {
   const lastCategory = weightsSum % 11;
 
   if (lastCategory === 10) {
-    return getLastCategory(value, 2);
+    return getLastCategory(value, 2, 2);
+  }
+  if (count === 2) {
+    return `${value}0`;
   }
 
   return `${value}${lastCategory}`;
